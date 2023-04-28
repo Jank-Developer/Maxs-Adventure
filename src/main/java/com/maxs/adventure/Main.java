@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         // This will be a main class that can be run in the terminal
 
-        // Simple Hello World will be first.
+        // Simple Hello World will be first. cheesenuggets
 
         // Then read from terminal input using System.In and Buffered reader
 
