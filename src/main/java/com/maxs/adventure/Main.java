@@ -12,7 +12,11 @@ public class Main {
 
         // Explain the different data types i.e string, int , double
 
-        // Explain the first big-ish project (Hotel Booking system)
+        // Show if/else, and switch
+
+        // show classes methods and interfaces
+
+        // Explain the first big-ish project
 
         // git advice
 
