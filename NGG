@@ -1,1 +1,40 @@
-It's a game of sorts. What do you want from me?
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+// Initiate scanner and generate random number
+        Scanner scanner = new Scanner(System.in);
+        int number = 1 + (int) (100 * Math.random());
+//Establish total guesses
+        int guesses = 5;
+        int attempt, guess;
+//User instructions
+        System.out.println("A Number has been selected. ");
+        System.out.println("It is between 1 and 100. ");
+        System.out.println("You have " + guesses + " guesses. ");
+//Establish guessing loop (users interaction) attempts start at 0 and increment 1 each time a guess is made.
+        for (attempt = 0; attempt < guesses; attempt++){
+
+            System.out.println("Take your guess.");
+
+            guess = scanner.nextInt();
+
+            if (number == guess) {
+                System.out.println("YOU ARE A WINNER!");
+break;
+            }
+            else if (number > guess && attempt != guesses - 1){
+            System.out.println("WRONG! " + guess +" is too LOW!");
+        }
+            else if (number < guess && attempt != guesses - 1)
+                System.out.println("WRONG! " + guess +" is too HIGH!");
+
+        }
+        if (guesses == attempt) {
+
+            System.out.println("STRRRIKE!. Try again!");
+            System.out.println("The answer was " + number );
+    }
+
+    }
+}
